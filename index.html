@@ -218,7 +218,13 @@ z-index: 10;
         </div>
     </div>
 
+    <audio id="ramadhanAudio" src="ramadhan.mp3" loop></audio>
+
     <script>
+        document.addEventListener('click', function() {
+            document.getElementById('ramadhanAudio').play();
+        });
+
         function updateCountdown() {
             const ramadanDate = new Date('Maret 1, 2025 00:00:00').getTime();
             const now = new Date().getTime();
