@@ -58,14 +58,14 @@
   width: 100%;
   height: 100vh;     
 }
-#dev{
+#dev, #devs{
   position: absolute;
-  left: 0;
+  left: 5px;
   bottom: 0;
   color: darkgrey;
 z-index: 10;
 }
-#dev a{
+#dev a, #devs a{
   color: aqua;
 }
        
@@ -190,8 +190,9 @@ z-index: 10;
     </style>
 </head>
 <body>
-  <span id="dev">developed by <a href="http://lokafans.rf.gd" target="_blank" rel="noopener noreferrer">Wolfman_3</a></span>
-  <div id="vanta"></div>
+  <span id="dev">developed by <a href="https://github.com/Wolfman303/ramadhan-countdown.github.io" target="_blank" rel="noopener noreferrer">Wolfman_3</a></span>
+  <span id="devs">other projects <a href="http://lokafans.rf.gd" target="_blank" rel="noopener noreferrer">LokaFans</a></span>
+    <div id="vanta"></div>
     <div class="container">
         <div class="moon"></div>
         <h1 class="title">Ramadan Countdown</h1>
@@ -217,8 +218,6 @@ z-index: 10;
             Ramadan akan tiba, insyaAllah 1 Maret 2025 🌙 ✨
         </div>
     </div>
-
-    <audio id="ramadhanAudio" src="ramadhan.mp3" loop></audio>
 
     <script>
         document.addEventListener('click', function() {
